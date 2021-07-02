@@ -4902,7 +4902,7 @@ function report(coveredPercent, failedThreshold) {
             owner: github.context.repo.owner,
             repo: github.context.repo.repo,
             issue_number: pullRequestId,
-            body: `## Simplecov Report
+            body: `## Simplecov Report: ${ coveredPercent } % , ${ failedThreshold } %
 ${summaryTable}
 `
         });
